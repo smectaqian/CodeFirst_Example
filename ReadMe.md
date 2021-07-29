@@ -8,36 +8,36 @@
 #### ConsoleAppNet472Sqlite
 ##### 框架
 .Net Formwork 4.7.2
-#### Nuget
+##### Nuget
 SQLite.CodeFirst
 
 
-### ConsoleAppNet472Mysql
-#### 框架
+#### ConsoleAppNet472Mysql
+##### 框架
 .Net Formwork 4.7.2
-#### Nuget
+##### Nuget
 MySql.Data.EntityFramework
 
 <hr>
 
 ### .Net 5
-### ConsoleAppNet5Sqlite
-#### 框架
+#### ConsoleAppNet5Sqlite
+##### 框架
 .Net 5.0
-#### Nuget
+##### Nuget
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.Sqlite
-#### 存在问题
+##### 存在问题
 插入的数据顺序不对，如生成的列表IP自增和序号对不上
 
 
-### ConsoleAppNet5Mysql
-#### 框架
+#### ConsoleAppNet5Mysql
+##### 框架
 .Net 5.0
-#### Nuget
+##### Nuget
 Microsoft.EntityFrameworkCore
 Pomelo.EntityFrameworkCore.MySql
-#### 存在问题
+##### 存在问题
 插入的数据顺序不对，如生成的列表IP自增和序号对不上
 
 ### 总结
