@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "000其他文件", "000其他文件", "{176DAA2D-32CD-439B-A547-9416E30031D0}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNet472Sqlite", "ConsoleAppNet472Sqlite\ConsoleAppNet472Sqlite.csproj", "{FA247E4F-C07B-41B5-9051-6BE763535559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppNet472Mysql", "ConsoleAppNet472Mysql\ConsoleAppNet472Mysql.csproj", "{FB55705C-DFD9-48C3-8E13-2099DB7236BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppNet5Sqlite", "ConsoleAppNet5Sqlite\ConsoleAppNet5Sqlite.csproj", "{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppNet5Mysql", "ConsoleAppNet5Mysql\ConsoleAppNet5Mysql.csproj", "{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001Mysql", "001Mysql", "{D75B3A1D-C1B8-47AB-8D16-540C26EE397C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002Sqlite", "002Sqlite", "{7925BC89-EBB1-4ECC-AD40-918C62D02C0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA247E4F-C07B-41B5-9051-6BE763535559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA247E4F-C07B-41B5-9051-6BE763535559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA247E4F-C07B-41B5-9051-6BE763535559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA247E4F-C07B-41B5-9051-6BE763535559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB55705C-DFD9-48C3-8E13-2099DB7236BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB55705C-DFD9-48C3-8E13-2099DB7236BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB55705C-DFD9-48C3-8E13-2099DB7236BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB55705C-DFD9-48C3-8E13-2099DB7236BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA247E4F-C07B-41B5-9051-6BE763535559} = {7925BC89-EBB1-4ECC-AD40-918C62D02C0A}
+		{FB55705C-DFD9-48C3-8E13-2099DB7236BF} = {D75B3A1D-C1B8-47AB-8D16-540C26EE397C}
+		{19A105EB-BD7E-44EB-9C2A-AFBFA33C8F9A} = {7925BC89-EBB1-4ECC-AD40-918C62D02C0A}
+		{33B04523-0A8A-4FED-BD68-7F5E4C62EDE1} = {D75B3A1D-C1B8-47AB-8D16-540C26EE397C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {853C1AB7-7538-4108-BABF-F12683BABE4E}
+	EndGlobalSection
+EndGlobal

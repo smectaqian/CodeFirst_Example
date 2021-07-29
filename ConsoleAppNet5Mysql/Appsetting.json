@@ -1,0 +1,8 @@
+/*
+  暂时没有用，相关调用的代码查不到
+*/
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=localhost;port=3306;Initial Catalog=TestDB;user id=root;password=abcABC123;sslMode=None;"
+  }
+}
