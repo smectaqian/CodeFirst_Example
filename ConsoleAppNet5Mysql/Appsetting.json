@@ -3,6 +3,6 @@
 */
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=localhost;port=3306;Initial Catalog=TestDB;user id=root;password=abcABC123;sslMode=None;"
+    "DefaultConnection": "Data Source=localhost;port=3306;Initial Catalog=CodefirstTestDB;user id=root;password=abcABC123;sslMode=None;"
   }
 }

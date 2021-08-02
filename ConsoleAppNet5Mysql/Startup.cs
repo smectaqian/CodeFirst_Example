@@ -21,9 +21,10 @@ namespace ConsoleApp4
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SqlContext>();
-            //services.AddDbContextPool<SqlContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
-            //    ServerVersion.Parse("8.0.20-mysql")));
+            services.AddDbContext<SqlContext>(options =>
+            {
+                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.Parse("8.0.20-mysql"));
+            });
         }
     }
 }

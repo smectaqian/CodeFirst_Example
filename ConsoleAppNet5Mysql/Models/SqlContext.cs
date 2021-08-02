@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Debug;
 using Microsoft.Extensions.Logging.Console;
-
 namespace ConsoleApp4.Models
 {
     public class SqlContext : DbContext
@@ -23,15 +22,31 @@ namespace ConsoleApp4.Models
                 Database.EnsureCreated();
             }
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public SqlContext(DbContextOptions<SqlContext> options) : base(options)
         {
-            string strConn = "Data Source=localhost;port=3306;Initial Catalog=TestDB;user id=root;password=abcABC123;";
-            optionsBuilder.UseMySql(strConn, ServerVersion.Parse("8.0.20-mysql"));
-            //Database.Migrate();
-            base.OnConfiguring(optionsBuilder);
+
         }
-        
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            string strConn = "Data Source=localhost;port=3306;Initial Catalog=CodefirstTestDB;user id=root;password=abcABC123;sslMode=None;";
+            options.UseMySql(strConn, ServerVersion.Parse("8.0.20-mysql"));
+
+            //if (!optionsBuilder.IsConfigured)
+            //{
+            //    optionsBuilder.UseLoggerFactory(MyLoggerFactory).UseSqlite(strConn);
+            //    //启用敏感数据记录,可以显示提交的参数
+            //    optionsBuilder.EnableSensitiveDataLogging();
+            //}
+
+            base.OnConfiguring(options);
+        }
+
+        protected override void OnModelCreating(ModelBuilder model)
+        {
+            base.OnModelCreating(model);
+        }
+
         public DbSet<User> User { get; set; }
     }
 
@@ -47,6 +62,11 @@ namespace ConsoleApp4.Models
         /// </summary>
         [Required, MaxLength(255)]
         public string name { get; set; }
+        /// <summary>
+        /// 用户名
+        /// </summary>
+        [Required, MaxLength(255)]
+        public string RealName { get; set; }
         /// <summary>
         /// 密码
         /// </summary>
